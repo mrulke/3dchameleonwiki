@@ -75,11 +75,11 @@ Now use an example sketch to turn your UNO into an ISP programer.
 
 Got to File&gt;Eamples&gt;11.Arduino ISP&gt;ArduinoISP
 
-![](1static/img/copy-of-avr-clean-up-and-install-1.png)
+![](static/img/copy-of-avr-clean-up-and-install-11.png)
 
 This will open a new sketch, now press the upload arrow to upload to your UNO.
 
-![](1static/img/copy-of-avr-clean-up-and-install-2.png)
+![](static/img/copy-of-avr-clean-up-and-install-12.png)
 
 This is what it looks like when the upload completes successfully.
 
@@ -95,31 +95,31 @@ C:.Program Files (x86).Arduino.hardware.tools.avr.etc
 
 In windows, go to control panel, system and security, then system
 
-![](1static/img/copy-of-avr-clean-up-and-install-3.png)
+![](static/img/copy-of-avr-clean-up-and-install-13.png)
 
-![](1static/img/copy-of-avr-clean-up-and-install-4.png)
+![](tatic/img/copy-of-avr-clean-up-and-install-14.png)
 
 Then scroll down to Advanced system settings
 
-![](1static/img/copy-of-avr-clean-up-and-install-5.png)
+![](static/img/copy-of-avr-clean-up-and-install-15.png)
 
 Then click Environment variables:
 
-![](1static/img/copy-of-avr-clean-up-and-install-6.png)
+![](static/img/copy-of-avr-clean-up-and-install-16.png)
 
 In the system variable box, highlight PATH then click edit:
 
-![](1static/img/copy-of-avr-clean-up-and-install-7.png)
+![](static/img/copy-of-avr-clean-up-and-install-17.png)
 
 Press New and paste in the 2 variables from above, it should look like this:
 
-![](1static/img/copy-of-avr-clean-up-and-install-8.png)
+![](static/img/copy-of-avr-clean-up-and-install-18.png)
 
 Press Ok and close the windows. 
 
 Now open command prompt go to the Windows key and type cmd to search:
 
-![](1static/img/copy-of-avr-clean-up-and-install-9.png)
+![](static/img/copy-of-avr-clean-up-and-install-19.png)
 
 Click Command Prompt to open it.
 
@@ -141,27 +141,29 @@ Now with your UNO connected to USB and your Chameleon board connected to the ICS
 
 avrdude -P com8 -b 19200 -c avrisp -p m328p -v
 
-![](2static/img/copy-of-avr-clean-up-and-install-4.png)
+![](static/img/copy-of-avr-clean-up-and-install-24.png)
 
 This is the full output of the command, you should see all the settings at the bottom.
 
-![](2static/img/copy-of-avr-clean-up-and-install-5.png)
+![](static/img/copy-of-avr-clean-up-and-install-25.png)
 
-![](2static/img/copy-of-avr-clean-up-and-install-6.png)
+![](static/img/copy-of-avr-clean-up-and-install-26.png)
 
 Now that AVR is working as we expect it to, we need to flash the Chameleon firmware. 
 
 Download Firmware from here: <https://www.3dchameleon.com/forum/getting-started/mk3-firmware-upgrade-instructions>
 
+Direct [link](60eeab_0ac45769fbd4485e9481d403cfe817ef.zip) here 
+
 You will download a ZIP file, right click and extract all, you will see the .HEX file we need.
 
-![](2static/img/copy-of-avr-clean-up-and-install-7.png)
+![](static/img/copy-of-avr-clean-up-and-install-27.png)
 
 Right click and copy that file to a common location, I am going to use Desktop
 
-![](2static/img/copy-of-avr-clean-up-and-install-8.png)
+![](static/img/copy-of-avr-clean-up-and-install-28.png)
 
-![](2static/img/copy-of-avr-clean-up-and-install-9.png)
+![](static/img/copy-of-avr-clean-up-and-install-29.png)
 
 With the file on your Desktop, we will head back to command line.
 
@@ -181,6 +183,6 @@ While flashing you should see send and receive lights flashing on the UNO, this 
 
 Once completed successfully, this is the full output you should see. Note the fuse information at the bottom is there, that’s how you know you are getting the full output.
 
-![](3static/img/copy-of-avr-clean-up-and-install-1.png)
+![](static/img/copy-of-avr-clean-up-and-install-31.png)
 
-![](3static/img/copy-of-avr-clean-up-and-install-2.png)
+![](static/img/copy-of-avr-clean-up-and-install-32.png)
